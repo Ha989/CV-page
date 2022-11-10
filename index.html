@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav-link">
+                    <a href="#header">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact-information">Contact</a>
+            </nav>
+            <div class="menu-btn"><img src="images/menu.png" alt=""></div>
+            <div class="header-text">
+                <p><i>Hi,</i></p>
+                <h1>I'm <span>Ha Nguyen</span></h1>
+                <h2>Full-stack web development student</h2>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/image1.JPG" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="title">About Me</h1>
+                    <p> I've chosen to become a full-stack web development student<br>
+                        because it's the future of the world. <br>
+                        Coding allows you to take all the ideas you have <br>
+                        in your head and make them come to life<br>
+                        to solve societal problems.<br>
+                        <span>It's challenging!</span>
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick = "showDetail(skills)" >Skills</p>
+                            <p class="tab-links" onclick = "showDetail(education)">Education</p>
+                            <p class="tab-links" onclick = "showDetail(experience)">Experience</p>
+                        </div>
+                        <div class="tab-content tab-skill-content active-content" id="skills">
+                            <p> HTML, CSS AND JAVASCRIPT</p>
+                            <img src="images/hml-css-js.png" alt="">
+                        </div>
+                        <div class=" tab-content tab-e-content" id="education">
+                            <ul>
+                            <li><span>2013-2017</span><br>Mechanical Engineering at Vietnam Hungary University</li>
+                            <li><span>09/2022 - Current</span><br>Full-stack web development at CoderSchool</li>
+                            </ul>
+                       </div> 
+                       <div class="tab-content tab-e-content" id="experience">
+                        <ul>
+                        <li><span>Projects: </span><br>Practice HTML, CSS, Javascript: API, Asynchronous, DOM, etc</li>
+                        </ul>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="contact-information"class="contact">
+    <div class="row2">
+    <div class="contact-details">
+        <h1>Contact Me</h1>
+        <br>
+        <p><span>Email: </span>viethanguyen0809@gmail.com</p>
+    </div>
+    <div class="social-link">
+        <p>Follow me:</p>
+        <a href="https://www.linkedin.com/in/h%C3%A0-nguy%E1%BB%85n-3b515818a" target = "_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="">
+        </a>
+        <a href="https://github.com/Ha989" target = "_blank" >
+            <img src="https://cdn.jim-nielsen.com/macos/128/github-desktop-2021-05-20.png" alt="">
+        </a>
+    </div>
+   </div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
