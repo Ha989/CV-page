@@ -18,14 +18,6 @@ body {
   color: #fff;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/img-back.png);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position: right;
-}
 .container {
     padding: 10px 10%;
 }
@@ -54,21 +46,9 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
-
-.header-text {
-    font-size: 30px;
-    margin-top: 10%;
-    margin-left: 20px;
-}
-.header-text h1 span{
-  color: violet;
-}
-.header-text h1 {
-    margin-top: 20px;
-}
-.header-text h2 {
-    font-size: 30px;
-    margin-top: 30px;
+h2 {
+    font-size: 25px;
+    color: #ffff;
 }
 
 #about { 
@@ -119,14 +99,23 @@ nav a:hover::after {
     color: orange;
     margin-bottom: 10px;
 }
+
+.tab-skill-content .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}  
+
 .tab-skill-content img {
-    width: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 .tab-e-content ul li{
     font-weight: 500;
     margin: 20px;
 }
+ 
 .tab-e-content ul li span {
     color: orange;
     font-size: 20px;
@@ -194,9 +183,9 @@ nav a:hover::after {
     }
     .nav-link.active {
         position: absolute;
-        background-color: #080808;
-        height: 100vh;
-        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 50vh;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -219,25 +208,7 @@ nav a:hover::after {
     .nav-link a:hover::after {
         width: 100%;
     }
-    .header-text {
-        margin: 30% 0px;
-       
-    }
-    .header-text h1 {
-        margin-top: 15%;
-        font-size: 30px;
-    }
-    .header-text h2 {
-        font-size: 20px;
-    }
 
-    #header {
-    width: 100vw;
-    height: 300px;
-    background-size: 350px;
-    background-position: top right;
-    margin-bottom: 10%;
-    }
     .container {
         width: 100vw;
         padding: 5%;
@@ -248,6 +219,7 @@ nav a:hover::after {
     }
     .title{
         font-size: 25px;
+        text-align: center;
     }
     .about-col1, .about-col2 {
         flex-basis: 100%;
@@ -255,16 +227,23 @@ nav a:hover::after {
         align-items: center;
     }
     .about-col2 {
-        text-align: center;
+        text-align: flex-start;
     }
     .tab-titles  {
         display: flex;
-        text-align: center;
+        text-align: flex-start;
         margin-left: 40px;
         justify-content: space-between;
     }
     .about-col2 p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .information-content {
+        width: 350px;
     }
     .about-col1 img {
        width: 100%;
